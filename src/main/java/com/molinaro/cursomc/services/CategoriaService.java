@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.molinaro.cursomc.domain.Categoria;
 import com.molinaro.cursomc.repositories.CategoriaRepository;
+import com.molinaro.cursomc.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoriaService {
@@ -15,6 +16,10 @@ public class CategoriaService {
 	public Categoria buscar(Integer id) {
 		
 		Categoria obj = repo.findOne(id);
+		
+		if (obj == null) {
+			throw new ObjectNotFoundException("Não existe Catedoria com id: #" + id);
+		}
 		
 		return obj;
 	}
