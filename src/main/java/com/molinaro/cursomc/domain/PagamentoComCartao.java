@@ -1,7 +1,5 @@
 package com.molinaro.cursomc.domain;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 
 import com.molinaro.cursomc.domain.enums.EstadoPagamento;
