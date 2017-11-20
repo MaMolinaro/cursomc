@@ -1,5 +1,7 @@
 package com.molinaro.cursomc.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
@@ -44,5 +46,9 @@ public class CategoriaService {
 		catch (DataIntegrityViolationException e) {
 			throw new DataIntegrityException("Não é possível excluir Categoria com Produtos associados!");
 		}
+	}
+	
+	public List<Categoria> findAll() {
+		return repo.findAll();
 	}
 }
