@@ -5,8 +5,10 @@ import java.util.Date;
 import javax.persistence.Entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.molinaro.cursomc.domain.enums.EstadoPagamento;
 
+@JsonTypeName("pagamentoComBoleto") 
 @Entity
 public class PagamentoComBoleto extends Pagamento {
 	

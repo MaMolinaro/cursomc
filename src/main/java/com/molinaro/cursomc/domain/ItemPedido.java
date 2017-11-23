@@ -69,9 +69,17 @@ public class ItemPedido implements Serializable {
 	public Pedido getPedido() {
 		return this.id.getPedido();
 	}
+	
+	public void setPedido(Pedido pedido) {
+		id.getPedido();
+	}
 
 	public Produto getProduto() {
 		return this.id.getProduto();
+	}
+	
+	public void setProduto(Produto produto) {
+		id.getProduto();
 	}
 	
 	public Double getSubTotal() {

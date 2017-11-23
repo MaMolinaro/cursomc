@@ -2,8 +2,10 @@ package com.molinaro.cursomc.domain;
 
 import javax.persistence.Entity;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.molinaro.cursomc.domain.enums.EstadoPagamento;
 
+@JsonTypeName("pagamentoComCartao") 
 @Entity
 public class PagamentoComCartao extends Pagamento {
 	
