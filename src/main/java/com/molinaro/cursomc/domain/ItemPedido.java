@@ -71,7 +71,7 @@ public class ItemPedido implements Serializable {
 	}
 	
 	public void setPedido(Pedido pedido) {
-		id.getPedido();
+		id.setPedido(pedido);
 	}
 
 	public Produto getProduto() {
@@ -79,7 +79,7 @@ public class ItemPedido implements Serializable {
 	}
 	
 	public void setProduto(Produto produto) {
-		id.getProduto();
+		id.setProduto(produto);
 	}
 	
 	public Double getSubTotal() {

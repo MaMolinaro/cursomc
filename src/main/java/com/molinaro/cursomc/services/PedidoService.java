@@ -57,7 +57,7 @@ public class PedidoService {
 		pagamentoRepository.save(obj.getPagamento());
 		
 		for (ItemPedido ip : obj.getItems()) {
-			ip.setDesconto(0.00);
+			ip.setDesconto(0.0);
 			ip.setPreco(produtoRepository.findOne(ip.getProduto().getId()).getPreco());
 			ip.setPedido(obj);
 		}
