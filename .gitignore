@@ -22,3 +22,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### Properties
+~/workspace/cursomc/src/main/resources/application.properties 
