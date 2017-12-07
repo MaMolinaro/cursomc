@@ -32,9 +32,7 @@ public class ImageService {
 			return img;
 		} catch (IOException e) {
 			throw new FileException("Erro ao ler arquivo");
-		}
-		
-		
+		}	
 	}
 
 	public BufferedImage pngToJpg(BufferedImage img) {

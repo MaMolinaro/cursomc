@@ -163,6 +163,12 @@ public class ClienteService {
 		
 		String fileName = prefix + user.getId() + ".jpg";
 		
-		return s3service.uploadFile(imageService.getInputStream(jpgImage, "jpg"), fileName, "image");
+		URI uri = s3service.uploadFile(imageService.getInputStream(jpgImage, "jpg"), fileName, "image");
+		
+		Cliente cliente = clienteRepository.findOne(user.getId());
+		cliente.setImageUrl(uri.toString());
+		clienteRepository.save(cliente);
+		
+		return uri;
 	}
 }
