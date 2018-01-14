@@ -46,7 +46,7 @@ public class ClienteResource {
 		
 		return ResponseEntity.ok().body(new ClienteDTO(obj));
 	}
-		
+	
 	@RequestMapping(method=RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody ClienteNewDTO objDto) {
 		Cliente obj = service.fromDTO(objDto);
