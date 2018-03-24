@@ -32,7 +32,7 @@ public class ProdConfig {
 		
 		dbService.instantiateTestDatabase();
 	
-		return true;
+		return true; 
 	}
 	
 	@Bean
