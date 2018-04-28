@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.molinaro.cursomc</groupId>
-	<artifactId>cursomc</artifactId>
+	<groupId>com.molinaro.spring-boot-ionic-backend</groupId>
+	<artifactId>spring-boot-ionic-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cursomc</name>
+	<name>spring-boot-ionic-backend</name>
 	<description>Estudo de caso Java para curso de Modelagem Conceitual UML</description>
 
 	<parent>
